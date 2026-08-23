@@ -14,26 +14,32 @@ this file is the answer. Fill a row in when you add a file, not later.
 
 ---
 
-## Audio — ACTION NEEDED
+## Audio — all CC0
 
-Sourced from **Pixabay** unless noted. Pixabay's Content Licence permits
-commercial use with no attribution, but **prohibits redistributing content on a
-standalone basis** — the open question for a public asset repo.
+Replaced 2026-08-23. Every track is **CC0** (public domain dedication): no
+attribution required, and redistribution permitted — which is what matters here,
+since this repo is public and the game loads each file by raw URL rather than
+only inside a build. The tracks that were here before came from Pixabay, whose
+licence forbids standalone redistribution.
 
-| file | used by | source | title / artist | licence | added | resolved? |
-|------|---------|--------|----------------|---------|-------|-----------|
-| `dir_Parlour_music.mp3` | Director's Cut — Parlour | Pixabay | _TODO: track page URL_ | Pixabay Content Licence | _TODO_ | ⚠️ standalone hosting |
-| `dir_Space_music.mp3` | Director's Cut — Deep Space | Pixabay | _TODO_ | Pixabay Content Licence | _TODO_ | ⚠️ |
-| `dir_attic_Music.mp3` | Director's Cut — Attic | Pixabay | _TODO_ | Pixabay Content Licence | _TODO_ | ⚠️ |
-| `dir_BumperChaos_Music.mp3` | Bumper Chaos | Pixabay | _TODO_ | Pixabay Content Licence | _TODO_ | ⚠️ |
-| `race_crowd.mp3` | Bumper Chaos crowd | _TODO_ | _TODO_ | _TODO_ | _TODO_ | ⚠️ |
+| file | used by | title | author | source | licence |
+|------|---------|-------|--------|--------|---------|
+| `dir_attic_Music.mp3` | Director's Cut — Attic | Horror Loop | TinyWorlds | [opengameart.org/content/horror-loop](https://opengameart.org/content/horror-loop) | CC0 |
+| `dir_Parlour_music.mp3` | Director's Cut — Parlour | Night Prowler | Section 31 | [opengameart.org/content/night-prowler](https://opengameart.org/content/night-prowler) | CC0 |
+| `dir_Space_music.mp3` | Director's Cut — Deep Space | My Very Own Dead Ship | madeso | [opengameart.org/content/background-space-track](https://opengameart.org/content/background-space-track) | CC0 |
+| `dir_BumperChaos_Music.mp3` | Bumper Chaos | Determined Pursuit | Emma_MA | [opengameart.org/content/determined-pursuit-epic-orchestra-loop](https://opengameart.org/content/determined-pursuit-epic-orchestra-loop) | CC0 |
+| `race_crowd.mp3` | Bumper Chaos crowd | Applause after a concert | Amada44 | [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:Sound_Effects_-_Applause_after_a_concert.ogg) | CC0 1.0 |
 
-**To resolve a row:** paste the track's page URL and the artist name, then either
-(a) confirm the licence permits redistribution, or (b) replace the track with a
-CC0 one and update the row. CC0 sources that suit a game: OpenGameArt (filter
-CC0), Kenney.nl, Freesound (filter CC0). Free-with-attribution is also fine —
-the game has a credits screen — but the attribution then belongs in the game,
-not only here.
+Each licence was checked on the track's OWN page, not inferred from the "CC0
+Music" collection it appears in — a collection is not a licence.
+
+**Processing applied.** All re-encoded to MP3 at 96 kbps (the crowd at 64 kbps
+mono, trimmed to six seconds with a fade), and loudness-matched to −16 LUFS so
+no arena is noticeably louder than the next. CC0 permits modification; nothing
+here needs to be declared, and the originals remain available at the URLs above.
+
+**Credit is optional but cheap.** CC0 requires none. Section 31 asks for an
+optional credit, and a credits screen listing all five authors costs nothing.
 
 Synthesised beds in `lib/boardSounds.js` are generated at runtime from
 oscillators. They are code, not recordings, and raise no licensing question.
